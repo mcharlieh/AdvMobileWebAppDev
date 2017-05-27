@@ -1,0 +1,157 @@
+-- phpMyAdmin SQL Dump
+-- version 4.6.6
+-- https://www.phpmyadmin.net/
+--
+-- Host: us-cdbr-azure-southcentral-f.cloudapp.net
+-- Generation Time: May 17, 2017 at 07:51 AM
+-- Server version: 5.5.45-log
+-- PHP Version: 5.6.30
+
+SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+SET time_zone = "+00:00";
+
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8mb4 */;
+
+--
+-- Table structure for table `lecture1`
+--
+
+CREATE TABLE `lecture1` (
+  `id` mediumint(8) UNSIGNED NOT NULL,
+  `fname` varchar(255) DEFAULT NULL,
+  `lname` varchar(255) DEFAULT NULL,
+  `email` varchar(255) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Dumping data for table `lecture1`
+--
+
+INSERT INTO `lecture1` (`id`, `fname`, `lname`, `email`) VALUES
+(1, 'Hall', 'Potter', 'vel.vulputate.eu@lectus.ca'),
+(2, 'Christopher', 'Daniels', 'dolor.quam@Nullamvitae.com'),
+(3, 'Brenna', 'Nguyen', 'erat.semper@anteipsumprimis.co.uk'),
+(4, 'Ocean', 'Flynn', 'metus.Aliquam.erat@Donec.ca'),
+(5, 'Eric', 'Diaz', 'at.nisi.Cum@pede.co.uk'),
+(6, 'Keaton', 'Clarke', 'in.faucibus.orci@augue.co.uk'),
+(7, 'Kaye', 'Key', 'id@ultricesposuerecubilia.ca'),
+(8, 'September', 'Campbell', 'pede@aliquetnec.edu'),
+(9, 'Murphy', 'Branch', 'commodo.ipsum.Suspendisse@scelerisque.co.uk'),
+(10, 'Ignacia', 'Marshall', 'dictum.eu.eleifend@NullainterdumCurabitur.net'),
+(11, 'Tamekah', 'Cline', 'Suspendisse.aliquet.molestie@consectetuermaurisid.org'),
+(12, 'Wing', 'Pennington', 'erat.neque.non@nisimagna.net'),
+(13, 'Malcolm', 'Dean', 'sit.amet@In.com'),
+(14, 'Adam', 'Fischer', 'sed.hendrerit.a@est.co.uk'),
+(15, 'Stephen', 'Mathews', 'Etiam.ligula@adipiscingelit.org'),
+(16, 'Boris', 'Green', 'parturient@Nuncullamcorper.edu'),
+(17, 'Charissa', 'Church', 'sit.amet.consectetuer@elementumsem.edu'),
+(18, 'Kai', 'Holder', 'mi.enim.condimentum@eget.org'),
+(19, 'Silas', 'Ellison', 'Nunc.mauris@nisiAenean.edu'),
+(20, 'Macy', 'Clay', 'ac.ipsum.Phasellus@vestibulum.edu'),
+(21, 'Jordan', 'Wilson', 'primis.in@Aliquamornare.edu'),
+(22, 'Omar', 'Pena', 'nisi.Mauris@malesuadautsem.co.uk'),
+(23, 'Brendan', 'Wooten', 'Nulla.tincidunt.neque@luctus.edu'),
+(24, 'Meredith', 'Carey', 'tristique@eulacusQuisque.co.uk'),
+(25, 'Sage', 'Sparks', 'ligula.Nullam.enim@odio.edu'),
+(26, 'Steven', 'Glenn', 'et.ultrices.posuere@sed.org'),
+(27, 'Rhona', 'Rowe', 'consequat.auctor@felisullamcorper.edu'),
+(28, 'Lance', 'Cruz', 'tristique@nonlobortis.co.uk'),
+(29, 'Fulton', 'Gallegos', 'eu@cursusNunc.net'),
+(30, 'Nathaniel', 'Mathews', 'nascetur.ridiculus@Nunccommodoauctor.edu'),
+(31, 'Mollie', 'Mcintosh', 'magna.et@posuere.co.uk'),
+(32, 'Alfonso', 'Miranda', 'Fusce@perconubianostra.net'),
+(33, 'Claire', 'Morin', 'in.aliquet@ipsumdolor.net'),
+(34, 'Catherine', 'Gonzalez', 'ipsum.primis.in@sed.edu'),
+(35, 'Tanner', 'Jackson', 'tempus.eu.ligula@Integerin.edu'),
+(36, 'Levi', 'Dickson', 'dui.semper@ultriciesornare.org'),
+(37, 'Stephen', 'Mann', 'quam@dapibus.com'),
+(38, 'Brenna', 'Simon', 'tellus@Vivamus.ca'),
+(39, 'Damian', 'Adkins', 'lectus.a.sollicitudin@Proinvel.ca'),
+(40, 'Damon', 'Mosley', 'id.risus@anteipsumprimis.com'),
+(41, 'Imani', 'Jackson', 'Morbi.vehicula.Pellentesque@etliberoProin.org'),
+(42, 'Jessica', 'Russo', 'ornare.egestas.ligula@Proin.ca'),
+(43, 'Ira', 'Griffith', 'hendrerit.a@pede.org'),
+(44, 'Wyatt', 'Briggs', 'non@nulla.edu'),
+(45, 'Maggy', 'Mathis', 'magnis.dis.parturient@sociis.net'),
+(46, 'Tanner', 'Nixon', 'Morbi.accumsan.laoreet@disparturientmontes.ca'),
+(47, 'Sawyer', 'Thornton', 'sagittis.felis@turpisAliquamadipiscing.org'),
+(48, 'Hall', 'Joyner', 'convallis@In.co.uk'),
+(49, 'Hall', 'Lane', 'sapien.Aenean@leoinlobortis.co.uk'),
+(50, 'Adrienne', 'Wade', 'scelerisque.neque@inmolestie.org'),
+(51, 'Grant', 'Mccormick', 'mauris.Suspendisse@lacuspedesagittis.org'),
+(52, 'Lucas', 'Sloan', 'sed@Sedcongue.co.uk'),
+(53, 'Asher', 'Roach', 'dictum.augue.malesuada@natoquepenatibus.net'),
+(54, 'Unity', 'Calderon', 'dolor@Vivamusmolestiedapibus.net'),
+(55, 'Zorita', 'Fitzgerald', 'tempor.arcu@cubiliaCuraeDonec.edu'),
+(56, 'Susan', 'Dillard', 'Fusce.aliquam.enim@Proinsedturpis.ca'),
+(57, 'Uriel', 'Gibson', 'Nunc@molestiesodalesMauris.com'),
+(58, 'Kameko', 'Holloway', 'ullamcorper.eu@aliquamadipiscinglacus.net'),
+(59, 'Anjolie', 'Dalton', 'nec.euismod@ullamcorper.ca'),
+(60, 'Ethan', 'Cervantes', 'nisi@ligulaNullam.edu'),
+(61, 'Camilla', 'Hanson', 'ultrices.posuere.cubilia@ametluctusvulputate.org'),
+(62, 'Hyacinth', 'Graham', 'aliquam.eu.accumsan@vitaeposuere.ca'),
+(63, 'Calista', 'Dunn', 'ac@arcuVestibulum.net'),
+(64, 'Judith', 'Emerson', 'tortor.dictum@ultriciesligulaNullam.org'),
+(65, 'Deanna', 'Foreman', 'ut.nulla@mattis.edu'),
+(66, 'Russell', 'Hampton', 'feugiat.nec@sit.co.uk'),
+(67, 'Anjolie', 'Nieves', 'et.pede@rhoncus.edu'),
+(68, 'Tamekah', 'Peck', 'facilisis.lorem@cursusdiamat.net'),
+(69, 'Kylee', 'Huber', 'Aliquam.ultrices.iaculis@sitametconsectetuer.com'),
+(70, 'Jason', 'Sykes', 'Phasellus.fermentum@mattis.edu'),
+(71, 'Evan', 'Byers', 'adipiscing@atvelit.org'),
+(72, 'Wanda', 'Stafford', 'risus.Duis.a@sit.edu'),
+(73, 'Julie', 'Cobb', 'Duis.gravida@dolor.ca'),
+(74, 'Stewart', 'Downs', 'massa.Quisque@malesuada.net'),
+(75, 'Emma', 'Shaffer', 'Pellentesque.tincidunt@ut.com'),
+(76, 'Shana', 'Solis', 'Pellentesque.ultricies.dignissim@enimEtiamgravida.com'),
+(77, 'Dakota', 'Cervantes', 'Curabitur.consequat@turpisNulla.co.uk'),
+(78, 'Hyacinth', 'Payne', 'Morbi.accumsan@vehicula.net'),
+(79, 'Omar', 'Haley', 'dolor.sit@velitPellentesque.ca'),
+(80, 'Cedric', 'Bray', 'dictum.placerat.augue@necmalesuada.com'),
+(81, 'Cailin', 'Roman', 'non.hendrerit@utdolor.com'),
+(82, 'Hunter', 'Hyde', 'molestie.Sed@ut.co.uk'),
+(83, 'Danielle', 'Hobbs', 'sed@odiosagittissemper.co.uk'),
+(84, 'Wilma', 'Emerson', 'facilisis@lobortisquam.edu'),
+(85, 'Brenda', 'Wilder', 'dolor.dolor.tempus@nisinibhlacinia.net'),
+(86, 'Pascale', 'Spence', 'commodo.auctor.velit@interdumenimnon.net'),
+(87, 'Priscilla', 'Golden', 'eu.accumsan.sed@fermentumfermentum.com'),
+(88, 'Kim', 'Salazar', 'eu.arcu@nisia.edu'),
+(89, 'Xena', 'Lopez', 'Vivamus@laciniamattisInteger.com'),
+(90, 'Idola', 'Flowers', 'massa.Suspendisse.eleifend@morbitristique.net'),
+(91, 'Doris', 'Phelps', 'Nulla.tincidunt.neque@disparturient.com'),
+(92, 'Ariel', 'Lynch', 'ullamcorper.Duis@urna.ca'),
+(93, 'Vivien', 'Houston', 'eget@velitPellentesqueultricies.co.uk'),
+(94, 'Geraldine', 'Burgess', 'a.sollicitudin@odioAliquamvulputate.co.uk'),
+(95, 'Stacy', 'Daniel', 'mauris.id@auctornuncnulla.co.uk'),
+(96, 'Austin', 'Woodward', 'aptent@Vivamusrhoncus.org'),
+(97, 'Cherokee', 'Odonnell', 'sociis.natoque.penatibus@malesuadaaugue.edu'),
+(98, 'Sasha', 'Shepherd', 'semper.dui@fermentumrisus.org'),
+(99, 'Nehru', 'Mcclure', 'taciti.sociosqu@habitant.edu'),
+(100, 'Dieter', 'Harrington', 'elit@NullaaliquetProin.com');
+
+--
+-- Indexes for dumped tables
+--
+
+--
+-- Indexes for table `lecture1`
+--
+ALTER TABLE `lecture1`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- AUTO_INCREMENT for dumped tables
+--
+
+--
+-- AUTO_INCREMENT for table `lecture1`
+--
+ALTER TABLE `lecture1`
+  MODIFY `id` mediumint(8) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=101;
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
