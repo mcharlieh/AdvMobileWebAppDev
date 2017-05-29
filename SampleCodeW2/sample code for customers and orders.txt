@@ -1,0 +1,281 @@
+-- phpMyAdmin SQL Dump
+-- version 4.6.6
+-- https://www.phpmyadmin.net/
+--
+-- Host: us-cdbr-azure-southcentral-f.cloudapp.net
+-- Generation Time: May 23, 2017 at 04:54 PM
+-- Server version: 5.5.45-log
+-- PHP Version: 5.6.30
+
+SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+SET time_zone = "+00:00";
+
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8mb4 */;
+
+--
+-- Database: `db-83e13e57-9556`
+--
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `customers`
+--
+
+CREATE TABLE `customers` (
+  `customerid` mediumint(9) NOT NULL DEFAULT '0',
+  `fname` varchar(255) DEFAULT NULL,
+  `lname` varchar(255) DEFAULT NULL,
+  `address` varchar(255) DEFAULT NULL,
+  `city` varchar(255) DEFAULT NULL,
+  `state` varchar(50) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Dumping data for table `customers`
+--
+
+INSERT INTO `customers` (`customerid`, `fname`, `lname`, `address`, `city`, `state`) VALUES
+(1, 'Laura', 'Boyle', '372 Iaculis Road', 'Phoenix', 'AZ'),
+(2, 'Hadassah', 'Thomas', 'Ap #214-9660 Cum St.', 'South Bend', 'IN'),
+(3, 'Rana', 'Ross', 'Ap #782-8497 Urna. Street', 'Meridian', 'ID'),
+(4, 'Kylynn', 'Atkinson', 'P.O. Box 386, 5142 Mollis Rd.', 'Rock Springs', 'WY'),
+(5, 'Tallulah', 'Simon', 'Ap #341-818 Lobortis, St.', 'Saint Paul', 'MN'),
+(6, 'Sade', 'Drake', '9635 Nulla Avenue', 'Fairbanks', 'AK'),
+(7, 'Craig', 'Noble', '123-238 Natoque St.', 'Wyoming', 'WY'),
+(8, 'Lee', 'Rodriquez', '537-5272 Magna. St.', 'Provo', 'UT'),
+(9, 'Meredith', 'Guerrero', '722-1783 Lorem Rd.', 'Des Moines', 'IA'),
+(10, 'Rana', 'Norris', 'Ap #694-8569 Curabitur Rd.', 'Nampa', 'ID'),
+(11, 'India', 'Cohen', '355-4388 Ligula St.', 'Indianapolis', 'IN'),
+(12, 'Daphne', 'Ayers', '8932 Elit. St.', 'Kearney', 'NE'),
+(13, 'Josiah', 'Woods', 'Ap #483-2600 At, St.', 'Butte', 'MT'),
+(14, 'Gil', 'Villarreal', '129-1094 Arcu Street', 'Saint Louis', 'MO'),
+(15, 'Xander', 'Alvarado', 'P.O. Box 672, 5497 Mauris Ave', 'Kaneohe', 'HI'),
+(16, 'Giacomo', 'Sandoval', '836-647 Leo St.', 'Bridgeport', 'CT'),
+(17, 'Yvonne', 'Copeland', 'P.O. Box 553, 8346 Non Rd.', 'Davenport', 'IA'),
+(18, 'Sawyer', 'Sharpe', '597-5009 Praesent Avenue', 'Chattanooga', 'TN'),
+(19, 'Ocean', 'Kidd', 'Ap #999-9094 Nullam St.', 'Columbus', 'GA'),
+(20, 'Ingrid', 'Cardenas', '670 Donec Rd.', 'College', 'AK'),
+(21, 'Hamish', 'Nolan', '9115 Enim. Avenue', 'Lewiston', 'ME'),
+(22, 'Ashton', 'Day', 'Ap #362-8924 Bibendum Street', 'Henderson', 'NV'),
+(23, 'Wylie', 'Odom', 'P.O. Box 226, 6813 Ante St.', 'Waterbury', 'CT'),
+(24, 'Jayme', 'Parker', '407-3336 Nam Av.', 'Gulfport', 'MS'),
+(25, 'Demetria', 'Vasquez', 'P.O. Box 620, 4753 Habitant Av.', 'Kansas City', 'MO'),
+(26, 'Tanisha', 'Hudson', '196-607 Vel Rd.', 'Biloxi', 'MS'),
+(27, 'Walker', 'Ellison', '2202 Sed Road', 'Paradise', 'NV'),
+(28, 'Nyssa', 'Woodard', 'P.O. Box 387, 9832 Felis St.', 'Omaha', 'NE'),
+(29, 'Walter', 'Larson', '7803 Nunc St.', 'Reading', 'PA'),
+(30, 'Aaron', 'Harrell', 'Ap #572-2128 Vulputate, St.', 'Sterling Heights', 'MI'),
+(31, 'Eliana', 'Hancock', '4285 Donec Street', 'Wilmington', 'DE'),
+(32, 'Brady', 'Sharp', 'P.O. Box 893, 953 Tristique St.', 'Bangor', 'ME'),
+(33, 'Freya', 'Puckett', 'Ap #808-6910 Nunc Ave', 'Chesapeake', 'VA'),
+(34, 'Salvador', 'Kline', '1057 Enim. St.', 'Carson City', 'NV'),
+(35, 'Sophia', 'Mosley', 'Ap #812-7422 Rutrum Avenue', 'Fairbanks', 'AK'),
+(36, 'Magee', 'Roach', '7054 Tempor Ave', 'Lexington', 'KY'),
+(37, 'Shea', 'Owen', 'P.O. Box 903, 8224 Eget St.', 'Fairbanks', 'AK'),
+(38, 'Nehru', 'Landry', 'Ap #896-6527 Vel Street', 'Indianapolis', 'IN'),
+(39, 'Brenda', 'Winters', 'Ap #981-5157 Gravida Av.', 'Lincoln', 'NE'),
+(40, 'Zia', 'Joyce', '4764 Mauris Ave', 'Philadelphia', 'PA'),
+(41, 'Casey', 'Joyce', '142-6265 Natoque Road', 'Gaithersburg', 'MD'),
+(42, 'Chava', 'Boyer', 'Ap #342-7193 Porttitor Av.', 'San Antonio', 'TX'),
+(43, 'Ruth', 'Mccall', 'Ap #325-7736 Tellus Street', 'Denver', 'CO'),
+(44, 'Kelsey', 'Dyer', 'P.O. Box 239, 9899 Amet, Rd.', 'Fairbanks', 'AK'),
+(45, 'Hope', 'Orr', 'P.O. Box 200, 8865 Arcu Rd.', 'San Diego', 'CA'),
+(46, 'Zelda', 'Shaw', 'Ap #531-7305 Eu, Rd.', 'Kearney', 'NE'),
+(47, 'Cruz', 'Leon', '235-6397 Et Rd.', 'Pittsburgh', 'PA'),
+(48, 'Jermaine', 'Coffey', '750-5667 Ultricies Road', 'Duluth', 'MN'),
+(49, 'Joelle', 'Shelton', '402-3372 Ac Rd.', 'Rockford', 'IL'),
+(50, 'Sigourney', 'Mccullough', '610-8848 Molestie Rd.', 'Montpelier', 'VT'),
+(51, 'Anika', 'James', '5019 Mollis. Rd.', 'Henderson', 'NV'),
+(52, 'Fallon', 'Snider', 'Ap #186-9259 Dui. Ave', 'San Diego', 'CA'),
+(53, 'Lunea', 'Wall', '2730 Sit St.', 'Joliet', 'IL'),
+(54, 'Stella', 'Joseph', 'Ap #775-617 Sit Rd.', 'Hillsboro', 'OR'),
+(55, 'Grace', 'Oneill', '2748 Vehicula Rd.', 'Wilmington', 'DE'),
+(56, 'Jessica', 'Mccormick', '2803 Gravida Road', 'Lakewood', 'CO'),
+(57, 'Ann', 'Cleveland', '3857 Urna Rd.', 'Bridgeport', 'CT'),
+(58, 'Hilel', 'Griffin', '1780 Odio Street', 'Pittsburgh', 'PA'),
+(59, 'Xena', 'Mooney', '8098 Adipiscing Road', 'Nashville', 'TN'),
+(60, 'Julian', 'Pruitt', '2568 Feugiat. St.', 'Norman', 'OK'),
+(61, 'Timothy', 'Blackburn', '9683 Vehicula Street', 'Newport News', 'VA'),
+(62, 'Rashad', 'Wynn', '7222 Aliquet St.', 'Athens', 'GA'),
+(63, 'Lane', 'Flores', '530-1868 Sed Road', 'Rock Springs', 'WY'),
+(64, 'Joy', 'Ray', '7458 Ante Ave', 'Norman', 'OK'),
+(65, 'Noel', 'Yates', 'Ap #563-2195 Gravida St.', 'Juneau', 'AK'),
+(66, 'Iona', 'Cohen', 'P.O. Box 936, 511 Quis, St.', 'Pocatello', 'ID'),
+(67, 'Lani', 'Garner', 'Ap #434-3882 Vestibulum Av.', 'Little Rock', 'AR'),
+(68, 'Indigo', 'Burris', 'Ap #653-9263 Nulla Rd.', 'Rutland', 'VT'),
+(69, 'Tatum', 'James', '905-2875 Risus. Avenue', 'Lewiston', 'ME'),
+(70, 'Brian', 'Chang', '170-1839 Ullamcorper, St.', 'Reading', 'PA'),
+(71, 'Victor', 'Sherman', '616-1900 Ante Ave', 'Bloomington', 'MN'),
+(72, 'Isaac', 'Castillo', 'Ap #360-6323 Ac St.', 'San Francisco', 'CA'),
+(73, 'Zelda', 'Bentley', 'Ap #447-557 Dapibus St.', 'Vancouver', 'WA'),
+(74, 'Ulla', 'Bond', '582-5467 Sit Avenue', 'Montgomery', 'AL'),
+(75, 'Maile', 'Bird', 'Ap #886-9178 Duis Avenue', 'Bowling Green', 'KY'),
+(76, 'Damian', 'Mccarty', 'Ap #849-6910 Facilisis Rd.', 'Biloxi', 'MS'),
+(77, 'Angela', 'Woodward', 'Ap #363-1924 Maecenas Rd.', 'Hillsboro', 'OR'),
+(78, 'Ori', 'Johnston', '622-2110 Non Rd.', 'Rockford', 'IL'),
+(79, 'Lareina', 'Thornton', 'Ap #357-8273 Vel Rd.', 'Newark', 'DE'),
+(80, 'Keegan', 'Nolan', 'P.O. Box 898, 9001 Neque. Av.', 'Indianapolis', 'IN'),
+(81, 'Faith', 'Suarez', 'P.O. Box 510, 9225 Aliquam Rd.', 'Sioux City', 'IA'),
+(82, 'Charity', 'Buck', 'Ap #646-2597 Elit Rd.', 'Newark', 'DE'),
+(83, 'Juliet', 'Kerr', 'P.O. Box 525, 1773 Adipiscing Ave', 'Cambridge', 'MA'),
+(84, 'Chase', 'Chaney', '827 Metus Street', 'Overland Park', 'KS'),
+(85, 'Shafira', 'Sweet', 'P.O. Box 644, 5311 Enim, Rd.', 'Tacoma', 'WA'),
+(86, 'Craig', 'Curtis', 'P.O. Box 648, 8307 Curabitur Avenue', 'Sioux City', 'IA'),
+(87, 'Nola', 'Morin', '264-7053 Euismod Street', 'Chandler', 'AZ'),
+(88, 'Wing', 'Roach', 'P.O. Box 774, 2007 Sem Av.', 'Houston', 'TX'),
+(89, 'Deborah', 'Perkins', '624-7666 Phasellus Av.', 'Georgia', 'GA'),
+(90, 'Levi', 'Hurst', 'Ap #699-3511 Libero. Rd.', 'Southaven', 'MS'),
+(91, 'Murphy', 'Delgado', 'P.O. Box 344, 4191 Sed Rd.', 'Augusta', 'ME'),
+(92, 'September', 'Ray', 'Ap #971-9889 Tristique Ave', 'Mesa', 'AZ'),
+(93, 'Hadley', 'Alvarado', '4797 Iaculis St.', 'Kailua', 'HI'),
+(94, 'Kim', 'Randall', 'P.O. Box 131, 7301 Sed St.', 'Anchorage', 'AK'),
+(95, 'Cain', 'Cline', '506-6074 Id, Rd.', 'Burlington', 'VT'),
+(96, 'Owen', 'Schwartz', '448-7788 Orci St.', 'Jefferson City', 'MO'),
+(97, 'Kirsten', 'Molina', '560-8387 Ut Rd.', 'Lowell', 'MA'),
+(98, 'Tiger', 'Duran', '4808 Ac Av.', 'Bellevue', 'NE'),
+(99, 'Ignacia', 'Sawyer', '284-1066 Vitae, Avenue', 'Kapolei', 'HI'),
+(100, 'Wayne', 'Roberts', 'Ap #759-8650 Viverra. Avenue', 'Worcester', 'MA');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `orders`
+--
+
+CREATE TABLE `orders` (
+  `orderid` mediumint(9) NOT NULL,
+  `conf_num` varchar(255) DEFAULT NULL,
+  `customerid` mediumint(9) DEFAULT NULL,
+  `salesrep` varchar(255) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Dumping data for table `orders`
+--
+
+INSERT INTO `orders` (`orderid`, `conf_num`, `customerid`, `salesrep`) VALUES
+(1000, 'KIT99MDQ0WK', 1, 'Stanton'),
+(1010, 'CWW67OEX1YI', 2, 'Moody'),
+(1020, 'PSD18BOZ3GO', 3, 'Nguyen'),
+(1030, 'TLQ93ZVE9BE', 4, 'Mckee'),
+(1040, 'FNF01SDX8FT', 5, 'Wooten'),
+(1050, 'JAR55GWE4FB', 6, 'Hull'),
+(1060, 'BKT81EOH7KA', 7, 'Jenkins'),
+(1070, 'LTW01WXV2XP', 8, 'Noble'),
+(1080, 'FZR55JFC4OU', 9, 'Duncan'),
+(1090, 'QTE05YGY4QF', 10, 'Wise'),
+(1100, 'UTU03CPT1NM', 11, 'Cunningham'),
+(1110, 'NBE37TFS4DA', 12, 'Willis'),
+(1120, 'IHZ26LDD3ZF', 13, 'Carlson'),
+(1130, 'JEM93DOM0MS', 14, 'Hernandez'),
+(1140, 'PYK23FNI3IX', 15, 'Travis'),
+(1150, 'QJP71ZJD2EE', 16, 'Massey'),
+(1160, 'FBA30JFQ3BK', 17, 'Howell'),
+(1170, 'PWF34PKF6TQ', 18, 'Rojas'),
+(1180, 'KDT85XVI8UM', 19, 'Figueroa'),
+(1190, 'WVA69UEL4EF', 20, 'Mcdonald'),
+(1200, 'RFF94ATZ9UC', 21, 'Berg'),
+(1210, 'EKY35BHY9EI', 22, 'Sharpe'),
+(1220, 'YGM86WIL7AH', 23, 'Frazier'),
+(1230, 'ZAC60QBU9GA', 24, 'Mullen'),
+(1240, 'KRY10SXZ2NY', 25, 'Diaz'),
+(1250, 'OXR40ISH0HV', 26, 'King'),
+(1260, 'HAL97NFJ9FF', 27, 'Velez'),
+(1270, 'OYJ41AOA5AT', 28, 'Hayden'),
+(1280, 'YMA38BBI5CH', 29, 'Shelton'),
+(1290, 'GVB11UEI3NL', 30, 'Copeland'),
+(1300, 'COH73DJX4FL', 31, 'Griffith'),
+(1310, 'YEP00IDQ3HB', 32, 'Bradley'),
+(1320, 'LYQ63OMP8FN', 33, 'Hickman'),
+(1330, 'QER30PLU8CX', 34, 'Mack'),
+(1340, 'CVD11HSK7BZ', 35, 'Stevens'),
+(1350, 'OFG79KCJ7HS', 36, 'Huffman'),
+(1360, 'GKN50LIT5XU', 37, 'Hess'),
+(1370, 'DKZ21EHH9QE', 38, 'Richmond'),
+(1380, 'ZQV67GBQ4EM', 39, 'Cooper'),
+(1390, 'MEP19FNA5SW', 40, 'Wolfe'),
+(1400, 'ZGB00NKI1NA', 41, 'Forbes'),
+(1410, 'XBC29HQK2HO', 42, 'Poole'),
+(1420, 'JKR36USZ6NS', 43, 'Yates'),
+(1430, 'NYT77OFE1SN', 44, 'Nicholson'),
+(1440, 'RZH41FTE2HP', 45, 'Key'),
+(1450, 'FHP04EHL9WM', 46, 'Larson'),
+(1460, 'WJL58NSQ3MX', 47, 'Hughes'),
+(1470, 'PUD30KHM4TE', 48, 'Adams'),
+(1480, 'AKC76CFL3BI', 49, 'Underwood'),
+(1490, 'RBJ71FHA8OD', 50, 'Madden'),
+(1500, 'AUS72SIK7PQ', 51, 'Kemp'),
+(1510, 'PZB35WLP5RD', 52, 'Mooney'),
+(1520, 'JFO09ESH9BY', 53, 'Combs'),
+(1530, 'HZP69VFA2HX', 54, 'Mullins'),
+(1540, 'ESG02HPH6HE', 55, 'Dalton'),
+(1550, 'KKU27DHT3WJ', 56, 'Howell'),
+(1560, 'IHU13CMJ2SV', 57, 'Hansen'),
+(1570, 'UOH07DML3TC', 58, 'Bright'),
+(1580, 'NLO57WIH3BK', 59, 'Nixon'),
+(1590, 'ZHJ20WTS0II', 60, 'Shepherd'),
+(1600, 'QJC33LRI9BI', 61, 'Middleton'),
+(1610, 'DGT55EKI2LC', 62, 'Glover'),
+(1620, 'RTT31QNF6WV', 63, 'Franco'),
+(1630, 'XGO37ZFO1EL', 64, 'Levine'),
+(1640, 'WXY10TJB9FA', 65, 'Clemons'),
+(1650, 'ZDM81EFD5CT', 66, 'Wilkins'),
+(1660, 'ARR34YNY7QB', 67, 'Hodges'),
+(1670, 'BVO36AMM6TP', 68, 'Parsons'),
+(1680, 'LVB95IAL9GF', 69, 'Reed'),
+(1690, 'CJL97APO9DY', 70, 'Pierce'),
+(1700, 'ULK02DYL5JP', 71, 'Cardenas'),
+(1710, 'ZOJ14RVJ3PC', 72, 'Anthony'),
+(1720, 'EJS32YOL6MU', 73, 'Tanner'),
+(1730, 'RJK09XAD0YU', 74, 'Dominguez'),
+(1740, 'EWH43EFI5SB', 75, 'Hahn'),
+(1750, 'NGD33OGB8AO', 76, 'Colon'),
+(1760, 'MXY89WKL8SK', 77, 'Benjamin'),
+(1770, 'NMD21ZHF0WX', 78, 'Dennis'),
+(1780, 'LGP66WTJ3QY', 79, 'Johnson'),
+(1790, 'NPQ72USG5AQ', 80, 'Church'),
+(1800, 'QQM88NBR4RN', 81, 'Reed'),
+(1810, 'FSN37KXJ9VP', 82, 'Atkinson'),
+(1820, 'JGW64OVZ7KM', 83, 'Slater'),
+(1830, 'NWK54HAW2GW', 84, 'Morrison'),
+(1840, 'EYW52WSB2XK', 85, 'Ellis'),
+(1850, 'AJO50UPI5FO', 86, 'Trevino'),
+(1860, 'RPC40WQU2RU', 87, 'Mccarty'),
+(1870, 'DKX16LWI5OD', 88, 'Tanner'),
+(1880, 'JAC44QXH6BK', 89, 'English'),
+(1890, 'HVU29MWD5AI', 90, 'Cain'),
+(1900, 'YBI54TOT1XY', 91, 'Head'),
+(1910, 'SWJ75NHT7CS', 92, 'Fields'),
+(1920, 'XTC60GNB2KI', 93, 'Gilmore'),
+(1930, 'LCN29TBJ7YI', 94, 'Jensen'),
+(1940, 'TZD77RST6RC', 95, 'Ballard'),
+(1950, 'UGF97ZYC5ZK', 96, 'Atkins'),
+(1960, 'RCG11FAM5YZ', 97, 'Mullen'),
+(1970, 'LVQ95RZW1WQ', 98, 'Reilly'),
+(1980, 'XGK29WKT1KP', 99, 'Swanson'),
+(1990, 'SKD80GBM6JR', 100, 'Carroll');
+
+--
+-- Indexes for dumped tables
+--
+
+--
+-- Indexes for table `customers`
+--
+ALTER TABLE `customers`
+  ADD PRIMARY KEY (`customerid`);
+
+--
+-- Indexes for table `orders`
+--
+ALTER TABLE `orders`
+  ADD PRIMARY KEY (`orderid`);
+
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
