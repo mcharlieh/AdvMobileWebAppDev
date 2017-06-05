@@ -89,19 +89,37 @@
   </div>
   </div>
   <div data-role="content">
-    <h1>MyDegree</h1>
-    <h3>Degree Name</h3>
-    <p>Degree School
-    <br>
-    Degree Progress
-    <br>
-    Culmalitive GPA</p>
-    <h3>Current Courses</h3>
-    <p>Course Name - # of credits
-    <br>
-    Grade</p>
-    <h3>Future Courses</h3>
-    <p>Course Name - # of credits</p>
+    <?php
+	  include 'config.php';
+	  include 'opendb.php';
+	  
+	  $sql_degree = "SELECT degree.dgre_name, degree.dgre_school, degree.dgre_type, degree.dgre_credits_total, user_table.credits_completed, user_table.gpa
+	  	FROM degree JOIN user_table ON degree.dgre_id = user_table.degree_id
+		WHERE user_table.user_id='1'";
+	  $sql_courses = "SELECT course.course_name, course.course_credits, student_courses.grade
+	  	FROM course JOIN student_courses ON course.course_id = student_courses.course_id
+		WHERE student_courses.user_id='1'";
+	  
+	  $result_degree = mysqli_query($conn, $sql_degree);
+	  $result_courses = mysqli_query($conn, $sql_courses);
+	  
+	  $rowd = mysqli_fetch_assoc($result_degree);
+	  $rowc = mysqli_fetch_assoc($result_courses);
+	  
+	  echo "MY DEGREE <br>";
+	  echo $rowd["degree.dgre_type"]. "of";
+	  echo $rowd["degree.dgre_name"]. "<br>";
+	  echo "School of " . $rowd["degree.dgre_school"]. "<br><br>";
+	  echo "Credit Completion: " . $rowd["user_table.credits_completed"];
+	  echo " of " . $rowd["degree.dgre_credits_total"]. "<br>";
+	  echo "Cumulative GPA: " . $rowd["user_table.gpa"]. "<br><br>";
+	  echo "Current Courses <br>";
+	  echo $rowc["course.course_name"];
+	  echo " - " . $rowc["course.course_credits"]. "credits <br>";
+	  echo "Current Grade: " . $rowc["student_courses.grade"];
+	  
+	  mysqli_close($conn);
+	 ?>
   </div>
   <div data-role="footer" data-theme="b">
     <h4>MHaley &copy; 2017</h4>
