@@ -4,10 +4,10 @@
 <meta charset="UTF-8">
 <title>jQuery Mobile Web App</title>
 <meta name="viewport" content="width=device-width,initial-scale=1" />
-<link href="http://code.jquery.com/mobile/1.3.0/jquery.mobile-1.3.0.min.css" rel="stylesheet" type="text/css"/>
+<link href="https://code.jquery.com/mobile/1.3.0/jquery.mobile-1.3.0.min.css" rel="stylesheet" type="text/css"/>
 <link href="styles/custom.css" rel="stylesheet" type="text/css">
-<script src="http://code.jquery.com/jquery-1.8.3.min.js" type="text/javascript"></script>
-<script src="http://code.jquery.com/mobile/1.3.0/jquery.mobile-1.3.0.min.js" type="text/javascript"></script>
+<script src="https://code.jquery.com/jquery-1.8.3.min.js" type="text/javascript"></script>
+<script src="https://code.jquery.com/mobile/1.3.0/jquery.mobile-1.3.0.min.js" type="text/javascript"></script>
 </head>
 <body>
 <div id="login" data-role="page" data-theme="b">
