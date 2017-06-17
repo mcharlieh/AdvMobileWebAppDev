@@ -40,8 +40,6 @@
 		return false;
 	}
 </script>
-
-<a href="#" onclick="return show()">Notify me!</a>
 </head>
 <body>
 <div id="login" data-role="page" data-theme="b">
@@ -62,7 +60,8 @@
     <div class="container" style="background-color:#f1f1f1">
       <button type="button" class="cancelbtn">Cancel</button>
       <span class="psw">Forgot <a href="#">password?</a></span> </div>
-    <!--</form>--> 
+    <!--</form>-->
+    <a href="#" onclick="return show()">Notify me!</a>
   </div>
   <div data-role="footer" data-theme="b">
     <h4>MHaley &copy; 2017</h4>
