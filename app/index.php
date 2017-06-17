@@ -8,6 +8,40 @@
 <link href="styles/custom.css" rel="stylesheet" type="text/css">
 <script src="https://code.jquery.com/jquery-1.8.3.min.js" type="text/javascript"></script>
 <script src="https://code.jquery.com/mobile/1.3.0/jquery.mobile-1.3.0.min.js" type="text/javascript"></script>
+<script>
+	var Notification = window.Notification || window.mozNotification || window.webkitNotification;
+
+	Notification.requestPermission(function (permission) {
+		// console.log(permission);
+	});
+
+	function show() {
+		window.setTimeout(function () {
+			var instance = new Notification(
+				"You've got tasks due!", {
+					body: "Take a look at your task list to see what assignments are due today."
+				}
+			);
+
+			instance.onclick = function () {
+				// Something to do
+			};
+			instance.onerror = function () {
+				// Something to do
+			};
+			instance.onshow = function () {
+				// Something to do
+			};
+			instance.onclose = function () {
+				// Something to do
+			};
+		}, 3000);
+
+		return false;
+	}
+</script>
+
+<a href="#" onclick="return show()">Notify me!</a>
 </head>
 <body>
 <div id="login" data-role="page" data-theme="b">
